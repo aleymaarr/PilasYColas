@@ -25,7 +25,16 @@ public class Cliente {
         return cestaCompra.size();
     }
 
-
-
-
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("===================================\n");
+        sb.append("* Nombre: ").append(nombre).append("\n");
+        sb.append("* Total de productos: ").append(getTotalProductos()).append("\n");
+        sb.append("* Lista de artículos en la cesta:\n");
+        for (String producto : cestaCompra) {
+            sb.append(producto).append("\n");
+        }
+        return sb.toString();
+    }
 }
