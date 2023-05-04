@@ -13,11 +13,4 @@ public class Cliente {
         this.cestaCompra = new ArrayList<>();
     }
 
-    private final String nombre;
-    private final List<String> cestaCompra;
-
-    public Cliente(String nombre) {
-        this.nombre = nombre;
-        this.cestaCompra = new ArrayList<>();
-    }
 }
