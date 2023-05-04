@@ -59,4 +59,18 @@ public class Cajero {
         }
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Cajero\n");
+        sb.append("===================================\n");
+        sb.append("* Número de caja: ").append(numeroCaja).append("\n");
+        sb.append("* Total de clientes: ").append(getTotalClientes()).append("\n");
+        sb.append("* Clientes en la fila:\n");
+        for (Cliente cliente : filaClientes) {
+            sb.append(cliente.toString()).append("\n");
+        }
+        sb.append("===================================\n");
+        return sb.toString();
+    }
 }
