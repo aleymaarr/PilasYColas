@@ -29,16 +29,7 @@ public class Cajero {
         System.out.println("Caja cerrada y cola de clientes vaciada.");
     }
 
-    public void abrirCaja() {
-        cajaAbierta = true;
-        System.out.println("Caja abierta.");
-    }
 
-    public void cerrarCaja() {
-        cajaAbierta = false;
-        filaClientes.clear();
-        System.out.println("Caja cerrada y cola de clientes vaciada.");
-    }
 
     public boolean estadoCaja() {
         return cajaAbierta;
