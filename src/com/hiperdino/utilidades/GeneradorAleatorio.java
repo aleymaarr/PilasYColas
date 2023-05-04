@@ -7,10 +7,13 @@ public class GeneradorAleatorio {
     public String getNombre() {
         return generarNombre();
     }
+
     public String getProducto() {
         return generarProducto();
     }
+
     private static final String[] productos = {"Leche", "Pan", "Huevos", "Arroz", "Fideos", "Carne", "Pollo", "Pescado", "Manzanas", "Plátanos", "Naranjas", "Lechuga"};
+
     private static final Random random = new Random();
 
     public static String generarProducto() {
@@ -27,4 +30,5 @@ public class GeneradorAleatorio {
     public int veces() {
             return random.nextInt(12) + 1;
     }
+
 }

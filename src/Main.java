@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
         Cajero cajero = new Cajero();
         Cliente cliente;
         GeneradorAleatorio generadorAleatorio = new GeneradorAleatorio();
@@ -70,6 +71,7 @@ public class Main {
                     System.out.println("Opción no válida, por favor seleccione una opción válida.");
                     break;
             }
+
         }
     }
 }

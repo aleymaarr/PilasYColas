@@ -11,6 +11,7 @@ public class Cajero {
     private boolean cajaAbierta;
 
 
+
     public Cajero() {
         contadorCajas++;
         this.numeroCaja = contadorCajas;
@@ -18,17 +19,18 @@ public class Cajero {
         this.cajaAbierta = false;
     }
 
+
     public void abrirCaja() {
         cajaAbierta = true;
         System.out.println("Caja abierta.");
     }
+
 
     public void cerrarCaja() {
         cajaAbierta = false;
         filaClientes.clear();
         System.out.println("Caja cerrada y cola de clientes vaciada.");
     }
-
 
 
     public boolean estadoCaja() {
@@ -38,6 +40,7 @@ public class Cajero {
     public void agregarClienteACola(Cliente cliente) {
         filaClientes.add(cliente);
     }
+
 
 
     public Cliente atenderCliente() {
@@ -73,4 +76,5 @@ public class Cajero {
         sb.append("===================================\n");
         return sb.toString();
     }
+
 }
