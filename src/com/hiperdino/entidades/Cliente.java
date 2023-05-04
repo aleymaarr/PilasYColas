@@ -43,5 +43,8 @@ public class Cliente {
         return sb.toString();
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> menu
 }
