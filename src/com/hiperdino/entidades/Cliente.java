@@ -17,13 +17,16 @@ public class Cliente {
         return nombre;
     }
 
+
     public void agregarProducto(String producto) {
         cestaCompra.add(producto);
     }
 
+
     public int getTotalProductos() {
         return cestaCompra.size();
     }
+
 
     @Override
     public String toString() {
@@ -37,4 +40,5 @@ public class Cliente {
         }
         return sb.toString();
     }
+
 }

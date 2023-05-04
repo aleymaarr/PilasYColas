@@ -7,9 +7,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
         Cajero cajero = new Cajero();
         Cliente cliente;
         GeneradorAleatorio generadorAleatorio = new GeneradorAleatorio();
+
         Scanner scanner = new Scanner(System.in);
 
         String opcion = "";
